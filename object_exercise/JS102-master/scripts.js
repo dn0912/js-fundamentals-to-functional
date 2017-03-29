@@ -66,10 +66,14 @@ var animals = [];
 animals.push(animal);
 
 var quackers = { username: 'DaffyDuck', tagline: 'Yippeee!', noises: ['quack', 'honk', 'sneeze', 'growl'] };
+
+//Add quackers to the animals array using a different method than before.
 animals[animals.length] = quackers;
 
+//Inspect your animals array to ensure you have two objects inside.
 console.log(animals);
 
+//Create two more animal objects and add them to your animals array. They should have these properties and your choice of values
 var quackers2 = { username: 'abc', tagline: 'def!', noises: ['ghi', 'jkl'] };
 var quackers3 = { username: 'mno', tagline: 'pqr!', noises: ['stu', 'vwx'] };
 
@@ -77,4 +81,5 @@ animals.push(quackers2);
 animals.push(quackers3);
 
 console.log(animals);
+//Check the length property of your array. It should give you 4.
 console.log(animals.length);
