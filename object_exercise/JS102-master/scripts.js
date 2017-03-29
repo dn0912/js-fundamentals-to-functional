@@ -86,6 +86,8 @@ console.log(animals);
 //Check the length property of your array. It should give you 4.
 console.log(animals.length);
 
+
+
 //Functions Exercise
 
 var AnimalTestUser = function(username){
@@ -110,4 +112,8 @@ var AnimalCreator = function(username, species, tagline, noises){
 		'tagline': tagline,
 		'friends': []
 	};
+}
+
+var addFriend = function(animal, friend){
+	animal.friend.push(friend);
 }
