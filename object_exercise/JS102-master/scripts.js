@@ -78,8 +78,7 @@ console.log(animals);
 var quackers2 = { username: 'abc', tagline: 'def!', noises: ['ghi', 'jkl'] };
 var quackers3 = { username: 'mno', tagline: 'pqr!', noises: ['stu', 'vwx'] };
 
-animals.push(quackers2);
-animals.push(quackers3);
+animals.push(quackers2, quackers3);
 
 console.log(animals);
 //Check the length property of your array. It should give you 4.
