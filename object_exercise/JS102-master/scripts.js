@@ -115,5 +115,20 @@ var AnimalCreator = function(username, species, tagline, noises){
 }
 
 var addFriend = function(animal, friend){
-	animal.friend.push(friend);
+	animal['friends'].push(friend);
 }
+
+var sheep = AnimalCreator('Cloud', 'sheep', 'You can count on me!', ['baahhh', 'arrgg', 'chewchewchew']);
+console.log(sheep);
+
+var cow = AnimalCreator('ad', 'sheerep', 'eregdfg!', ['dfg', 'ergerdf', 'sfdgsfd']);
+console.log(cow);
+
+var lama = AnimalCreator('a1233d', '123', '234324!', ['234', '2545', '23423']);
+console.log(lama);
+
+addFriend(sheep, cow);
+addFriend(sheep, cow);
+
+var myFarm =[sheep, cow, lama];
+
