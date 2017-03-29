@@ -131,4 +131,12 @@ addFriend(sheep, cow);
 addFriend(sheep, cow);
 
 var myFarm =[sheep, cow, lama];
+console.log(myFarm);
 
+var addMatchesArray = function(farm){
+	for(var i=0; i<farm.length; i++){
+		farm[i]['matches'] = [];
+	}
+}
+addMatchesArray(myFarm); 
+console.log(myFarm[0]);
