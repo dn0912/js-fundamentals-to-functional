@@ -102,4 +102,12 @@ var AnimalTestUser = function(username){
 	};
 }
 
-
+var AnimalCreator = function(username, species, tagline, noises){
+	return {
+		'username': username,
+		'species': species,
+		'noises': noises,
+		'tagline': tagline,
+		'friends': []
+	};
+}
