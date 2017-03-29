@@ -89,8 +89,16 @@ console.log(animals.length);
 //Functions Exercise
 
 var AnimalTestUser = function(username){
+	if(arguments.length > 1){
+		var otherArgs = [];
+		for(var i = 1; i < arguments.length; i++){
+			otherArgs.push(arguments[i]);
+		}
+	}
+
 	return {
-		'username': username
+		'username': username,
+		'otherArgs': otherArgs
 	};
 }
 
