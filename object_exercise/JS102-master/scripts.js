@@ -42,6 +42,8 @@ for(var key in animal){
 	if(key==='tagline') console.log('Hi my name is '+animal[key]);
 }
 
+//Functions Exercise
+
 // Create a variable called noiseArray and assign it to an array literal. Place at least one element in the array.
 var noiseArray =['arrTest'];
 
@@ -83,3 +85,13 @@ animals.push(quackers2, quackers3);
 console.log(animals);
 //Check the length property of your array. It should give you 4.
 console.log(animals.length);
+
+//Functions Exercise
+
+var AnimalTestUser = function(username){
+	return {
+		'username': username
+	};
+}
+
+
