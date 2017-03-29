@@ -47,6 +47,7 @@ var noiseArray =['arrTest'];
 
 //Add a noise to the beginning of the noiseArray.
 var help = ['a'];
+//noiseArray.unshift('a');
 noiseArray=help.concat(noiseArray);
 
 //Add another noise to the end of the noiseArray.
