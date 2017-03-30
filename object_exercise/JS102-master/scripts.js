@@ -160,9 +160,11 @@ relationships.friends = friends;
 
 var matches = [];
 relationships.matches = matches;
+console.log(Object.keys(relationships).length);
 
 relationships.matches.push(animals[0]['username']);
 
-for(var an in animals){
-	an['relationships'] = relationships;
+for(var i=0; i<animals.length;i++){
+	animals[i]['relationships'] = relationships;
 }
+console.log(animals);
