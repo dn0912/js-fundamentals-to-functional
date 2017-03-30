@@ -149,3 +149,12 @@ var giveMatches = function(farm){
 }
 giveMatches(myFarm); 
 console.log(myFarm[0]);
+
+// Nested Object exercise
+
+var friends = [];
+friends.push(animals[0]['username'], animals[1]['username']);
+
+var relationships = {};
+
+relationships.friends = friends;
