@@ -19,10 +19,8 @@ var blabAgainLater = nonsense('hi');
 //Write a function with a closure. The first function should only take one argument, someone's first name, and the inner function should take one more argument, someone's last name. The inner function should console.log both the first name and the last name.
 
 var lasNameTrier = function(firstname){
-	var fname = firstname;
 	var innerFunction = function(lastname){
-		var lname = lastname;
-		console.log(fname+ " "+lname);
+		console.log(firstname+ " "+lastname);
 	};
 	return innerFunction;
 };
@@ -36,8 +34,9 @@ var storyWriter = function(){
 	var story = '';
 	return {
 		addWords: function(string){
-			story = story+string;
-			console.log(story);
+			story += string + ' ';
+			//trim() cut the last space
+			return story.trim();
 		},
 		erase: function(string){
 			story = '';
@@ -53,3 +52,12 @@ var storyOfMyLife = storyWriter();
 storyOfMyLife.addWords('My code broke.'); // 'My code broke.'
 storyOfMyLife.addWords('I ate some ice cream.'); //'My code broke. I ate some ice cream.'
 storyOfMyLife.erase(); // ''
+
+//Using the module pattern, design a toaster. Use your creativity here and think about what you want your users to be able to access on the outside of your toaster vs what you don't want them to be able to touch.
+
+var Toaster = function(){
+    
+    return {
+    	
+    };
+};
