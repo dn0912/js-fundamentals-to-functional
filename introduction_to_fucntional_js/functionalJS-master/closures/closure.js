@@ -18,3 +18,14 @@ var blabAgainLater = nonsense('hi');
 
 //Write a function with a closure. The first function should only take one argument, someone's first name, and the inner function should take one more argument, someone's last name. The inner function should console.log both the first name and the last name.
 
+var lasNameTrier = function(firstname){
+	var fname = firstname;
+	var innerFunction = function(lastname){
+		var lname = lastname;
+		console.log(fname+ " "+lname);
+	};
+	return innerFunction;
+};
+
+var firstNameFarmer = lasNameTrier('Farmer');
+firstNameFarmer('Brown');
