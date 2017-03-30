@@ -156,5 +156,13 @@ var friends = [];
 friends.push(animals[0]['username'], animals[1]['username']);
 
 var relationships = {};
-
 relationships.friends = friends;
+
+var matches = [];
+relationships.matches = matches;
+
+relationships.matches.push(animals[0]['username']);
+
+for(var an in animals){
+	an['relationships'] = relationships;
+}
