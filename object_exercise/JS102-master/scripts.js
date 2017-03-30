@@ -140,3 +140,11 @@ var addMatchesArray = function(farm){
 }
 addMatchesArray(myFarm); 
 console.log(myFarm[0]);
+
+var giveMatches = function(farm){
+	for(var i=0; i<farm.length; i++){
+		farm[i]['matches'].push(farm[i]['friends'][Math.floor(Math.random()*farm[i]['friends'].length)]);
+	}
+}
+giveMatches(myFarm); 
+console.log(myFarm[0]);
