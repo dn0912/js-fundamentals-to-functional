@@ -6,7 +6,8 @@ var nonsense = function(string){
 	var blab = function(){
 		alert(string);
 	};
-	setTimeOut(return blab, 2000);
+	setTimeout(blab(), 2000);
+	return blab;
 };
 
 
@@ -14,3 +15,6 @@ var nonsense = function(string){
 
 var blabLater = nonsense('hello');
 var blabAgainLater = nonsense('hi');
+
+//Write a function with a closure. The first function should only take one argument, someone's first name, and the inner function should take one more argument, someone's last name. The inner function should console.log both the first name and the last name.
+
